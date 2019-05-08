@@ -1,0 +1,12 @@
+html{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background: gray;
+}
+
+.error {
+    background: red;
+    border-radius: 5px;
+    padding: auto;
+}
