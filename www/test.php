@@ -1,23 +1,22 @@
 <?php
 
 $username = "admin";
-$password = "poop";
+$password = "password";
 
 if(isset($_POST['username']) && isset($_POST['password']))
 {
     if($_POST['username'] == $username && $_POST['password'] == $password)
     {
-        setcookie("session","itsokman",time()+10);
-        header("Location: /");
+        echo "CORRECT";
     }
     else
     {
-        header("Location: /?login=failed");
+        echo "NOT CORRECT \n" . json_encode($_POST);
     }
 }
 else
 {
-    header("Location: /?login=failed");
+    echo "NOT SET \n" . json_encode($_POST);
 }
 
 ?>
