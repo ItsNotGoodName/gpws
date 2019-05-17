@@ -1,7 +1,7 @@
 <?php
 
 $username = "admin";
-$password = "poop";
+$password = "house";
 
 if(isset($_POST['username']) && isset($_POST['password']))
 {
